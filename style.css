@@ -1,0 +1,323 @@
+:root {
+    --primary: #087f8c;
+    --primary-dark: #075f69;
+    --dark: #17252b;
+    --text: #5d6870;
+    --light: #f4f8f8;
+    --border: #dfe7e8;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top-bar {
+    padding: 8px 0;
+    background: var(--dark);
+    color: #dbe5e7;
+    font-size: 13px;
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.navbar {
+    min-height: 78px;
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar-brand {
+    color: var(--dark);
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: #37474f;
+}
+
+.eyebrow {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.hero-section {
+    padding: 95px 0;
+    background: var(--light);
+}
+
+.hero-section h1 {
+    max-width: 700px;
+    color: var(--dark);
+    font-size: clamp(40px, 5vw, 62px);
+    line-height: 1.1;
+    margin-bottom: 22px;
+}
+
+.hero-section > .container > .row > .col-lg-7 > p {
+    max-width: 620px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.quick-info {
+    padding: 35px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(23, 37, 43, 0.06);
+}
+
+.quick-info h2 {
+    color: var(--dark);
+    margin-bottom: 12px;
+}
+
+.info-row {
+    display: flex;
+    gap: 18px;
+    padding: 17px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.info-row:last-child {
+    border-bottom: 0;
+}
+
+.info-row strong {
+    color: var(--primary);
+}
+
+.section-padding {
+    padding: 95px 0;
+}
+
+.section-header {
+    max-width: 650px;
+    margin-bottom: 45px;
+}
+
+.section-header h2,
+.about h2,
+.appointment h2 {
+    color: var(--dark);
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.service-card {
+    height: 100%;
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--white);
+}
+
+.service-number {
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.service-card h3 {
+    color: var(--dark);
+    margin-bottom: 14px;
+}
+
+.service-card a,
+.article-card a {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.resources {
+    background: var(--light);
+}
+
+.article-card {
+    padding: 28px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.article-category {
+    margin-bottom: 8px;
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.article-card h3 {
+    color: var(--dark);
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.sidebar-box {
+    padding: 28px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.sidebar-box h3 {
+    color: var(--dark);
+    margin-bottom: 20px;
+}
+
+.topic-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.topic-list li {
+    border-bottom: 1px solid var(--border);
+}
+
+.topic-list li:last-child {
+    border-bottom: 0;
+}
+
+.topic-list a {
+    display: block;
+    padding: 13px 0;
+    color: var(--text);
+}
+
+.topic-list a:hover {
+    color: var(--primary);
+}
+
+.appointment-box {
+    padding: 55px;
+    background: var(--light);
+    border-radius: 16px;
+}
+
+.form-label,
+label {
+    display: block;
+    margin-bottom: 7px;
+    color: var(--dark);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-control,
+.form-select {
+    min-height: 48px;
+    border-color: var(--border);
+}
+
+textarea.form-control {
+    min-height: auto;
+}
+
+.about {
+    background: var(--white);
+}
+
+.about-points > div {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.about-points > div:last-child {
+    border-bottom: 0;
+}
+
+.about-points strong {
+    color: var(--dark);
+    font-size: 18px;
+}
+
+.about-points p {
+    margin: 6px 0 0;
+}
+
+footer {
+    padding: 65px 0 20px;
+    background: var(--dark);
+    color: #b7c5c8;
+}
+
+.footer-logo {
+    color: #fff;
+    font-size: 26px;
+}
+
+footer h3 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+footer a {
+    display: block;
+    margin-bottom: 8px;
+    color: #b7c5c8;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+.copyright {
+    margin-top: 45px;
+    padding-top: 20px;
+    border-top: 1px solid #31434a;
+    font-size: 14px;
+}
+
+@media (max-width: 767px) {
+
+    .top-bar-content {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .hero-section {
+        padding: 70px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 40px;
+    }
+
+    .section-padding {
+        padding: 70px 0;
+    }
+
+    .appointment-box {
+        padding: 30px 20px;
+    }
+
+    .quick-info {
+        padding: 25px;
+    }
+}
